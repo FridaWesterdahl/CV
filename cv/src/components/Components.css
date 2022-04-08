@@ -1,0 +1,287 @@
+.about-me h1,
+.work-ex h1,
+.skills h1,
+.contact h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px #1d1c1c;
+    font-size: 40px;
+    opacity: 60%;
+    margin-bottom: 50px;
+}
+
+/* .about-me, .work-ex, .skills, .contact {
+    c
+} */
+
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: self-end;
+    margin-top: -20px;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+#map {
+    width: 10%;
+}
+
+.about-me p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.about-me a {
+    text-decoration: none;
+    color: rgb(229, 236, 185);
+}
+
+.about-me img {
+    border-radius: 10px;
+    width: 90%;
+    opacity: 80%;
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+.work-ex h2 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.work-ex h3 {
+    margin-top: 2px;
+    color: rgba(236, 229, 126, 0.993);
+}
+
+.work-ex p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    width: 85%
+}
+
+.work-ex li {
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 5px;
+    margin: 40px 0px;
+}
+
+.show-more {
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.show-more:hover {
+    cursor: pointer;
+    opacity: 55%;
+    font-size: 11px;
+}
+
+#skills-container,
+#contact-container,
+.about-me p {
+    width: 85%;
+    margin: auto;
+}
+
+#skills-container ul {
+    padding: 0px 0px 0px 25px;
+}
+
+#skills-container li {
+    border-radius: 20px;
+    box-shadow: 2px 6px 9px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+#skills-container p {
+    padding: 5px 0px;
+    margin: 5px 5px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.skills-background {
+    background-color: rgba(97, 96, 96, 0.568);
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+    position: relative;
+    width: 0;
+}
+
+.csharp {
+    animation: csharp-fill 2s forwards;
+    background-color: rgb(63, 102, 230);
+}
+
+@keyframes csharp-fill {
+    100% {
+        width: 65%;
+    }
+}
+
+.js {
+    animation: js-fill 2s forwards;
+    background-color: rgb(255, 145, 0);
+}
+
+@keyframes js-fill {
+    100% {
+        width: 50%;
+    }
+}
+
+.css {
+    animation: css-fill 2s forwards;
+    background-color: rgb(74, 172, 29);
+}
+
+@keyframes css-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+.react {
+    animation: react-fill 2s forwards;
+    background-color: rgb(214, 211, 61);
+}
+
+@keyframes react-fill {
+    100% {
+        width: 30%;
+    }
+}
+
+.html {
+    animation: html-fill 2s forwards;
+    background-color: rgb(214, 61, 214);
+}
+
+@keyframes html-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+.tsql {
+    animation: tsql-fill 2s forwards;
+    background-color: rgb(61, 178, 214);
+}
+
+@keyframes tsql-fill {
+    100% {
+        width: 50%;
+    }
+}
+
+.ef {
+    animation: ef-fill 2s forwards;
+    background-color: rgb(214, 186, 61);
+}
+
+@keyframes ef-fill {
+    100% {
+        width: 50%;
+    }
+}
+
+.asp {
+    animation: asp-fill 2s forwards;
+    background-color: rgb(104, 214, 61);
+}
+
+@keyframes asp-fill {
+    100% {
+        width: 20%;
+    }
+}
+
+
+#contact-container {
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+#contact-container a {
+    text-decoration: none;
+    color: rgba(236, 229, 126, 0.993);
+    background-color: black;
+    padding: 2px 6px;
+    border-radius: 10px;
+    width: min-content;
+    margin: 0px auto;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+#contact-container a:hover {
+    cursor: pointer;
+    opacity: 80%;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+#phone-icon {
+    width: 58%;
+}
+
+#email-icon {
+    width: 30%;
+}
+
+#linkedin-icon {
+    width: 42%;
+    margin: 2px auto;
+}
+
+#gh-icon {
+    width: 20%;
+    margin: 2px auto;
+}
+
+#phone {
+    grid-area: a;
+}
+
+#email {
+    grid-area: b;
+    margin-top: 40px;
+}
+
+#linkedin {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#gh {
+    grid-area: d;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
