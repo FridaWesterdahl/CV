@@ -9,6 +9,14 @@
     margin-bottom: 50px;
 }
 
+#skills-container,
+#contact-container,
+.about-me p,
+#workex-container {
+    width: 85%;
+    margin: auto;
+}
+
 .location {
     display: flex;
     flex-direction: row;
@@ -24,7 +32,7 @@
 }
 
 .about-me p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgba(0, 0, 0, 0.76);
     color: white;
     border-radius: 8px;
@@ -56,7 +64,7 @@
 }
 
 .work-ex p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ul {
@@ -101,7 +109,8 @@ ul {
     content: "close";
 }
 
-.info {
+.info,
+.show-more {
     animation: opac 2s;
 }
 
@@ -114,17 +123,6 @@ ul {
     100% {
         opacity: 1;
     }
-}
-
-#skills-container,
-#contact-container,
-.about-me p {
-    width: 85%;
-    margin: auto;
-}
-
-#skills-container ul {
-    padding: 0px 0px 0px 25px;
 }
 
 #skills-container li {
@@ -223,7 +221,7 @@ ul {
 
 @keyframes ef-fill {
     100% {
-        width: 50%;
+        width: 45%;
     }
 }
 
@@ -237,7 +235,6 @@ ul {
         width: 20%;
     }
 }
-
 
 #contact-container {
     display: grid;
@@ -270,30 +267,38 @@ ul {
 }
 
 #phone-icon {
-    width: 58%;
+    width: 85px;
+    margin: 0px auto;
 }
 
 #email-icon {
-    width: 30%;
+    width: 85px;
+    margin: 0px auto;
 }
 
 #linkedin-icon {
-    width: 42%;
+    width: 60px;
     margin: 2px auto;
 }
 
 #gh-icon {
-    width: 20%;
+    width: 60px;
     margin: 2px auto;
 }
 
 #phone {
     grid-area: a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #email {
     grid-area: b;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #linkedin {
@@ -309,4 +314,146 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+#phone-icon:hover,
+#email-icon:hover,
+#linkedin-icon:hover,
+#gh-icon:hover {
+    animation: rotate 1s forwards;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #phone-icon {
+        width: 75px;
+    }
+
+    #email-icon {
+        width: 75px;
+    }
+
+    #linkedin-icon {
+        width: 50px;
+    }
+
+    #gh-icon {
+        width: 50px;
+    }
+
+    #contact-container a {
+        font-size: 13px;
+    }
+
+    #contact-container a:hover {
+        font-size: 15px;
+    }
+
+    #skills-container p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    #phone-icon {
+        width: 70px;
+    }
+
+    #email-icon {
+        width: 70px;
+    }
+
+    #linkedin-icon {
+        width: 45px;
+    }
+
+    #gh-icon {
+        width: 45px;
+    }
+
+    #contact-container a {
+        font-size: 11px;
+    }
+
+    #contact-container a:hover {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    #phone-icon {
+        width: 65px;
+    }
+
+    #email-icon {
+        width: 65px;
+    }
+
+    #linkedin-icon {
+        width: 40px;
+    }
+
+    #gh-icon {
+        width: 40px;
+    }
+
+    #contact-container a {
+        font-size: 10px;
+    }
+
+    #contact-container a:hover {
+        font-size: 12px;
+    }
+
+    #skills-container p {
+        font-size: 12px;
+    }
+
+    #skills-container {
+        margin-left: 0px;
+    }
+
+    #workex-container {
+        margin-left: 5px;
+    }
+
+    .work-ex h2 {
+        font-size: 20px;
+    }
+
+    .work-ex h3 {
+        font-size: 15px;
+    }
+
+    .work-ex p,
+    .about-me p {
+        font-size: 13px;
+    }
+
+    .about-me-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #skills-container p {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 755px) {
+    #skills-container p {
+        font-size: 10px;
+    }
 }
