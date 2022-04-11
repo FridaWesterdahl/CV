@@ -9,11 +9,6 @@
     margin-bottom: 50px;
 }
 
-/* .about-me, .work-ex, .skills, .contact {
-    c
-} */
-
-
 .location {
     display: flex;
     flex-direction: row;
@@ -78,17 +73,47 @@ ul {
     margin: 40px 0px;
 }
 
-.show-more {
+.show-more,
+.close {
     color: whitesmoke;
-    background-color: black;
+    background: black;
+    padding: 1px 6px;
     border-radius: 10px;
     font-size: 10px;
 }
 
-.show-more:hover {
+.show-more:after,
+.close:after {
+    content: '...';
+}
+
+.show-more:hover:after {
     cursor: pointer;
     opacity: 55%;
     font-size: 11px;
+    content: "info";
+}
+
+.close:hover:after {
+    cursor: pointer;
+    opacity: 55%;
+    font-size: 11px;
+    content: "close";
+}
+
+.info {
+    animation: opac 2s;
+}
+
+@keyframes opac {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #skills-container,

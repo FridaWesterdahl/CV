@@ -7,22 +7,22 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-const ambtn = document.querySelector("#about-me");
-const workbtn = document.querySelector("#work-ex");
-const skillsbtn = document.querySelector("#skills");
-const contactbtn = document.querySelector("#contact");
-const aboutMe = document.querySelector(".about-me");
-const workEx = document.querySelector(".work-ex");
-const skills = document.querySelector(".skills");
-const contact = document.querySelector(".contact");
-
 function App() {
 
   const aboutMeClick = () => {
+    const ambtn = document.querySelector("#about-me");
+    const workbtn = document.querySelector("#work-ex");
+    const skillsbtn = document.querySelector("#skills");
+    const contactbtn = document.querySelector("#contact");
     ambtn.className = "active";
     workbtn.className = "inactive";
     skillsbtn.className = "inactive";
     contactbtn.className = "inactive";
+
+    const aboutMe = document.querySelector(".about-me");
+    const workEx = document.querySelector(".work-ex");
+    const skills = document.querySelector(".skills");
+    const contact = document.querySelector(".contact");
 
     if (aboutMe.classList.contains("hidden")) {
       aboutMe.classList.remove("hidden");
@@ -33,10 +33,19 @@ function App() {
   }
 
   const workExClick = () => {
+    const ambtn = document.querySelector("#about-me");
+    const workbtn = document.querySelector("#work-ex");
+    const skillsbtn = document.querySelector("#skills");
+    const contactbtn = document.querySelector("#contact");
     workbtn.className = "active";
     ambtn.className = "inactive";
     skillsbtn.className = "inactive";
     contactbtn.className = "inactive";
+
+    const aboutMe = document.querySelector(".about-me");
+    const workEx = document.querySelector(".work-ex");
+    const skills = document.querySelector(".skills");
+    const contact = document.querySelector(".contact");
 
     if (workEx.classList.contains("hidden")) {
       workEx.classList.remove("hidden");
@@ -47,10 +56,19 @@ function App() {
   }
 
   const skillsClick = () => {
+    const ambtn = document.querySelector("#about-me");
+    const workbtn = document.querySelector("#work-ex");
+    const skillsbtn = document.querySelector("#skills");
+    const contactbtn = document.querySelector("#contact");
     skillsbtn.className = "active";
     ambtn.className = "inactive";
     workbtn.className = "inactive";
     contactbtn.className = "inactive";
+
+    const aboutMe = document.querySelector(".about-me");
+    const workEx = document.querySelector(".work-ex");
+    const skills = document.querySelector(".skills");
+    const contact = document.querySelector(".contact");
 
     if (skills.classList.contains("hidden")) {
       skills.classList.remove("hidden");
@@ -61,10 +79,19 @@ function App() {
   }
 
   const contactClick = () => {
+    const ambtn = document.querySelector("#about-me");
+    const workbtn = document.querySelector("#work-ex");
+    const skillsbtn = document.querySelector("#skills");
+    const contactbtn = document.querySelector("#contact");
     contactbtn.className = "active";
     ambtn.className = "inactive";
     skillsbtn.className = "inactive";
     workbtn.className = "inactive";
+
+    const aboutMe = document.querySelector(".about-me");
+    const workEx = document.querySelector(".work-ex");
+    const skills = document.querySelector(".skills");
+    const contact = document.querySelector(".contact");
 
     if (contact.classList.contains("hidden")) {
       contact.classList.remove("hidden");
@@ -90,16 +117,16 @@ function App() {
           <Aside />
         </div>
         <div className='main'>
-          <div className='about-me'>
+          <div className='about-me page'>
             <AboutMe />
           </div>
-          <div className='work-ex hidden'>
+          <div className='work-ex page hidden'>
             <WorkExperience />
           </div>
-          <div className='skills hidden'>
+          <div className='skills page hidden'>
             <Skills />
           </div>
-          <div className='contact hidden'>
+          <div className='contact page hidden'>
             <Contact />
           </div>
         </div>
