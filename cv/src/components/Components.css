@@ -11,7 +11,7 @@
 
 #skills-container,
 #contact-container,
-.about-me p,
+#about-me-container,
 #workex-container {
     width: 85%;
     margin: auto;
@@ -31,12 +31,38 @@
     width: 10%;
 }
 
-.about-me p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-side right-side";
+}
+
+#left {
+    grid-area: left-side;
+    height: 300px;
+    overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.76);
-    color: white;
     border-radius: 8px;
     padding: 5px;
+}
+
+#right {
+    grid-area: right-side;
+}
+
+#right h2 {
+    margin-top: 50px;
+    color: rgba(236, 229, 126, 0.993);
+}
+
+#right p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.about-me p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 .about-me a {
@@ -44,12 +70,42 @@
     color: rgb(229, 236, 185);
 }
 
+
+.lang {
+    position: relative;
+    width: 0;
+}
+
+.swe {
+    animation: swe-fill 2s forwards;
+    background-color: rgba(69, 225, 108, 0.984);
+    text-align: right;
+}
+
+@keyframes swe-fill {
+    100% {
+        width: 100%;
+    }
+}
+
+.eng {
+    animation: eng-fill 2s forwards;
+    background-color: rgba(241, 127, 56, 0.961);
+    text-align: right;
+}
+
+@keyframes eng-fill {
+    100% {
+        width: 80%;
+    }
+}
+
 .about-me img {
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     opacity: 80%;
-    margin-top: 23px;
-    margin-bottom: 20px;
+    /* margin-top: 23px;
+    margin-bottom: 20px; */
 }
 
 .work-ex h2 {
@@ -125,7 +181,8 @@ ul {
     }
 }
 
-#skills-container li {
+#skills-container li,
+#right li {
     border-radius: 20px;
     box-shadow: 2px 6px 9px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
@@ -137,7 +194,8 @@ ul {
     font-weight: 600;
 }
 
-.skills-background {
+.skills-background,
+.lang-background {
     background-color: rgba(97, 96, 96, 0.568);
     border-radius: 20px;
     box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
