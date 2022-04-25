@@ -26,15 +26,15 @@ function WorkExperience() {
                         <h2>Espresso House, barista</h2>
                         <h3>2021-10-01 - ongoing</h3>
                         <p className={click1 ? 'info' : 'hidden'}>Today I am working extra as a barista.
-                            Serving customers and giving them their best possible coffee experience!</p>
+                            Serving customers, working with the espresso machine and food prepping.</p>
                         <button className={click1 ? 'close' : 'show-more'} onClick={handleClick1}></button>
                     </li>
                     <li>
                         <h2>Espresso House, coffeeshop manager</h2>
                         <h3>2019-10-01 - 2021-09-30</h3>
                         <p className={click2 ? 'info' : 'hidden'}>Management of two different coffeeshops
-                            of different sizes and revenue. Handleing a staff group up to 14 people with
-                            development talks in the daily work and more formal sit downs.</p>
+                            of different sizes and revenue. Handleing a staff group up to 14 people with full
+                            staff and financial responsibility.</p>
                         <button className={click2 ? 'close' : 'show-more'} onClick={handleClick2}></button>
                     </li>
                     <li>
