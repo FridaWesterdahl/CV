@@ -1,0 +1,15 @@
+.aside img {
+    margin-top: 40px;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text {
+    width: 90%;
+    margin: 5px auto;
+    border-radius: 6px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.76);
+    /* background-color: rgba(240, 248, 255, 0.253); */
+}

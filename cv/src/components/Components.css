@@ -1,0 +1,606 @@
+.about-me h1,
+.work-ex h1,
+.skills h1,
+.contact h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px #1d1c1c;
+    font-size: 40px;
+    opacity: 60%;
+    margin-bottom: 50px;
+}
+
+#skills-container,
+#contact-container,
+#about-me-container,
+#workex-container {
+    width: 85%;
+    margin: auto;
+}
+
+/* aside */
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: self-end;
+    margin-top: -20px;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+#map {
+    width: 10%;
+}
+
+/* about me */
+
+#about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-side right-side";
+}
+
+#left {
+    grid-area: left-side;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#right {
+    grid-area: right-side;
+}
+
+#right h2 {
+    margin-top: 50px;
+    color: rgba(236, 229, 126, 0.993);
+}
+
+#right p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.about-me p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.about-me a {
+    text-decoration: none;
+    color: rgb(229, 236, 185);
+}
+
+.swe {
+    animation: swe-fill 2s forwards;
+    background-color: rgba(69, 225, 108, 0.984);
+    text-align: right;
+}
+
+@keyframes swe-fill {
+    100% {
+        width: 100%;
+    }
+}
+
+.eng {
+    animation: eng-fill 2s forwards;
+    background-color: rgba(241, 127, 56, 0.961);
+    text-align: right;
+}
+
+@keyframes eng-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+.about-me img {
+    border-radius: 10px;
+    width: 100%;
+    opacity: 80%;
+    /* margin-top: 23px;
+    margin-bottom: 20px; */
+}
+
+/* work experience */
+
+.work-ex h2 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.work-ex h3 {
+    margin-top: 2px;
+    color: rgba(236, 229, 126, 0.993);
+}
+
+.work-ex p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    list-style: none;
+    width: 85%
+}
+
+.work-ex li {
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 5px;
+    margin: 40px 0px;
+}
+
+.show-more,
+.close {
+    color: whitesmoke;
+    background: black;
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.show-more:after,
+.close:after {
+    content: '...';
+}
+
+.show-more:hover:after {
+    cursor: pointer;
+    opacity: 55%;
+    font-size: 11px;
+    content: "info";
+}
+
+.close:hover:after {
+    cursor: pointer;
+    opacity: 55%;
+    font-size: 11px;
+    content: "close";
+}
+
+.info,
+.show-more {
+    animation: opac 2s;
+}
+
+@keyframes opac {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* skills */
+
+#skills-container li,
+#right li {
+    border-radius: 20px;
+    box-shadow: 2px 6px 9px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+#skills-container p {
+    padding: 5px 0px;
+    margin: 5px 5px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.skills-background,
+.lang-background {
+    background-color: rgba(97, 96, 96, 0.568);
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.skill,
+.lang {
+    position: relative;
+    width: 0;
+}
+
+.csharp {
+    animation: csharp-fill 2s forwards;
+    background-color: rgb(63, 102, 230);
+}
+
+@keyframes csharp-fill {
+    100% {
+        width: 65%;
+    }
+}
+
+.js {
+    animation: js-fill 2s forwards;
+    background-color: rgb(255, 145, 0);
+}
+
+@keyframes js-fill {
+    100% {
+        width: 50%;
+    }
+}
+
+.css {
+    animation: css-fill 2s forwards;
+    background-color: rgb(74, 172, 29);
+}
+
+@keyframes css-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+.react {
+    animation: react-fill 2s forwards;
+    background-color: rgb(214, 211, 61);
+}
+
+@keyframes react-fill {
+    100% {
+        width: 30%;
+    }
+}
+
+.html {
+    animation: html-fill 2s forwards;
+    background-color: rgb(214, 61, 214);
+}
+
+@keyframes html-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+.tsql {
+    animation: tsql-fill 2s forwards;
+    background-color: rgb(61, 178, 214);
+}
+
+@keyframes tsql-fill {
+    100% {
+        width: 50%;
+    }
+}
+
+.ef {
+    animation: ef-fill 2s forwards;
+    background-color: rgb(214, 186, 61);
+}
+
+@keyframes ef-fill {
+    100% {
+        width: 45%;
+    }
+}
+
+.asp {
+    animation: asp-fill 2s forwards;
+    background-color: rgb(104, 214, 61);
+}
+
+@keyframes asp-fill {
+    100% {
+        width: 20%;
+    }
+}
+
+/* contact */
+
+#contact-container {
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+#contact-container a {
+    text-decoration: none;
+    color: rgba(236, 229, 126, 0.993);
+    background-color: black;
+    padding: 2px 6px;
+    border-radius: 10px;
+    width: min-content;
+    margin: 0px auto;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+#contact-container a:hover {
+    cursor: pointer;
+    opacity: 80%;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+#phone-icon {
+    width: 85px;
+    margin: 0px auto;
+}
+
+#email-icon {
+    width: 85px;
+    margin: 0px auto;
+}
+
+#linkedin-icon {
+    width: 60px;
+    margin: 2px auto;
+}
+
+#gh-icon {
+    width: 60px;
+    margin: 2px auto;
+}
+
+#phone {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#email {
+    grid-area: b;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#linkedin {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#gh {
+    grid-area: d;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#phone-icon:hover,
+#email-icon:hover,
+#linkedin-icon:hover,
+#gh-icon:hover {
+    animation: rotate 1s forwards;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* responsivity */
+
+@media screen and (max-width: 1100px) {
+    #phone-icon {
+        width: 75px;
+    }
+
+    #email-icon {
+        width: 75px;
+    }
+
+    #linkedin-icon {
+        width: 50px;
+    }
+
+    #gh-icon {
+        width: 50px;
+    }
+
+    #contact-container a {
+        font-size: 13px;
+    }
+
+    #contact-container a:hover {
+        font-size: 15px;
+    }
+
+    #skills-container p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    #phone-icon {
+        width: 70px;
+    }
+
+    #email-icon {
+        width: 70px;
+    }
+
+    #linkedin-icon {
+        width: 45px;
+    }
+
+    #gh-icon {
+        width: 45px;
+    }
+
+    #contact-container a {
+        font-size: 11px;
+    }
+
+    #contact-container a:hover {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    #phone-icon {
+        width: 65px;
+    }
+
+    #email-icon {
+        width: 65px;
+    }
+
+    #linkedin-icon {
+        width: 40px;
+    }
+
+    #gh-icon {
+        width: 40px;
+    }
+
+    #contact-container a {
+        font-size: 10px;
+    }
+
+    #contact-container a:hover {
+        font-size: 12px;
+    }
+
+    #skills-container p {
+        font-size: 12px;
+    }
+
+    #skills-container {
+        margin-left: 0px;
+    }
+
+    #workex-container {
+        margin-left: 5px;
+    }
+
+    .work-ex h2 {
+        font-size: 20px;
+    }
+
+    .work-ex h3 {
+        font-size: 15px;
+    }
+
+    .work-ex p,
+    .about-me p {
+        font-size: 13px;
+    }
+
+    .about-me-text {
+        font-size: 14px;
+    }
+
+    .about-me h2 {
+        font-size: 20px;
+    }
+
+    #right ul {
+        margin-left: -20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #skills-container p {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 755px) {
+    #skills-container p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .about-me h1,
+    .work-ex h1,
+    .skills h1,
+    .contact h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    #about-me-container {
+        grid-template-columns: 2fr;
+        grid-template-areas:
+            "first"
+            "sec";
+    }
+
+    #left {
+        grid-area: first;
+        height: 180px;
+    }
+
+    #right {
+        grid-area: sec;
+    }
+
+    #right h2 {
+        margin-top: 25px;
+    }
+
+    #right ul {
+        margin-bottom: 30px;
+    }
+
+    .work-ex h2 {
+        font-size: 16px;
+    }
+
+    .work-ex h3 {
+        font-size: 13px;
+    }
+
+    #phone-icon {
+        width: 50px;
+    }
+
+    #email-icon {
+        width: 50px;
+    }
+
+    #linkedin-icon {
+        width: 35px;
+    }
+
+    #gh-icon {
+        width: 35px;
+    }
+
+    #email {
+        margin-left: -40px;
+    }
+
+    #gh {
+        margin-top: 25px;
+        margin-left: -40px;
+    }
+
+    #contact-container a:hover {
+        font-size: 10px;
+    }
+
+}

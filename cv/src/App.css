@@ -1,38 +1,166 @@
+html {
+  background-image: url('./images/black-gaa3567f97_1920.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  opacity: 80%;
+  color: rgb(94, 89, 89);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+
+}
+
+.page {
+  animation: opac 2s;
+}
+
+@keyframes opac {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .App {
+  width: 70%;
+  margin: 80px auto;
+  background-color: rgba(241, 237, 237, 0.068);
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  font-size: 70px;
+  font-family: 'Babylonica', cursive;
+  color: rgb(230, 217, 43);
+  margin-bottom: 0px;
+  letter-spacing: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App h2 {
+  color: whitesmoke;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.menu button {
+  width: 100%;
+  padding: 5px 8px;
+  background-color: rgba(0, 0, 0, 0.767);
+  color: whitesmoke;
+  font-size: 18px;
+  box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu button:hover {
+  cursor: pointer;
+  opacity: 80%;
+  color: rgba(236, 229, 126, 0.993);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "a b";
+}
+
+.aside {
+  grid-area: a;
+}
+
+.main {
+  grid-area: b;
+  background-color: rgba(240, 248, 255, 0.103);
+  width: 92%;
+  margin-top: 20px;
+}
+
+.footer {
+  grid-area: d;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: rgb(18, 18, 19);
+}
+
+#left::-webkit-scrollbar {
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgb(87, 85, 85);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(53, 52, 52);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 426px) {
+  .App {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App h1 {
+    font-size: 45px;
+  }
+
+  .App h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .menu button {
+    font-size: 11px;
+  }
+
+  .menu button:hover {
+    font-size: 13px;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .main {
+    margin-left: -75px;
+    width: 110%;
   }
 }
