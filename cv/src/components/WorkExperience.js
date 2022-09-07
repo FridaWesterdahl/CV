@@ -46,14 +46,14 @@ function WorkExperience() {
                     </li>
                     <li>
                         <h2>McDonald's, shiftleader</h2>
-                        <h3>2017-04-01 - 2018-08-31</h3>
+                        <h3>2017-04-01 - 2018-06-30</h3>
                         <p className={click4 ? 'info' : 'hidden'}>Leadership during the shift and plan
                             the staffing.</p>
                         <button className={click4 ? 'close' : 'show-more'} onClick={handleClick4}></button>
                     </li>
                     <li>
                         <h2>Apoteket Hjärtat, in-/outbound</h2>
-                        <h3>2015-09-01 - 2017-02-31</h3>
+                        <h3>2015-09-01 - 2017-03-31</h3>
                         <p className={click5 ? 'info' : 'hidden'}>Working at Apoteket Hjärtats warehouse
                             with both inbound and outbound.</p>
                         <button className={click5 ? 'close' : 'show-more'} onClick={handleClick5}></button>
